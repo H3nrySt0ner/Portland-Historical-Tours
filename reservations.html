@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- 
+Author: Henry Stoner
+Date: 3/13/2025
+File name: template.html
+-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portland Historical Tours</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div id="container">
+
+    <header>
+        <a href="index.html"><img src="images/Logo.png" alt="Portland Historical Tours logo"></a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+              
+            <li><a href="about.html">About Us</a></li>
+              
+            <li><a href="reservations.html">Reservations</a></li>
+              
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul> 
+    </nav>
+
+    <main id="content">
+        
+        <form class="form-grid" action="https://pcc-webdev.com/cis195h/rescue/formInfo.php" method="post">
+            
+            <fieldset>
+                
+                <legend>Book a Reservation!</legend>
+                
+                <label for="tour">Tour:</label>
+                <select id="tour" size="1" name="tour">
+                    <option value>Choose Your Tour</option>
+                    <option value="1">Downtown Tour - $50</option>
+                    <option value="2">Albina Tour - $80</option>
+                    <option value="3">Landmarks Tour - $110</option>
+                </select>
+                
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName">
+                
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName">
+                
+                <label for="email">Email address:</label>
+                <input type="text" name="email" id="email">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone">
+                
+                <label for="date">Tour Date:</label>
+                <input type="date" name="date" id="date">
+                
+                <label for="participants">Total Participants:</label>
+                <input type="number" name="participants" id="participants" min="1" max="10">
+                
+                <label for="sensitivities">Does anyone in your party have food or drink sensitivities? If so, what are they?</label>
+                <textarea name="sensitivities" id="sensitivities" rows="2" cols="20"></textarea>
+                
+            </fieldset>
+            
+            <input type="image" src="images/button.jpg" alt="Submit Button" id="submit" class="btn">
+            
+        </form>
+        
+    </main>
+    
+    <footer>
+        
+        <div class="copywrite">
+        
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+        
+            <p><a href="mailto:sales@portlandhistoricaltours.com">sales@portlandhistoricaltours.com</a></p>
+
+            <h4 class="mobile tel-link"><a href="tel:5035551234">Call us: (503) 555-1234</a></h4>
+        
+        </div>
+        
+    </footer>
+    
+</div>
+
+</body>
+</html>
