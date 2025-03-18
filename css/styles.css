@@ -31,7 +31,7 @@ img {
 /* Style rules for header */
 header {
     height: 190px;
-    background-image: url("/images/Portland Historical Tours.jpg");
+    background-image: url("images/Portland%20Historical%20Tours.jpg");
     background-size: cover;
     background-position: center;
 }
